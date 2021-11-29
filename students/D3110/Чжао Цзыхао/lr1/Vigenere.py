@@ -14,7 +14,7 @@ def Encrypt(plaintext, key_list):
     ciphertext = ""
 
     i = 0
-    for ch in plaintext:  # 遍历明文
+    for ch in plaintext:
         if 0 == i % len(key_list):
             i = 0
         if ch.isalpha():  # 明文是否为字母,如果是,则判断大小写,分别进行加密
